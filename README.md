@@ -31,9 +31,8 @@ The current functionality provides rotation in all degrees of freedom for the ca
 Rotation is controlled by the mouse movement (handleMouse function). The function updates theta (x-axis/yaw) and phi (y-axis/pitch) by multiplying a step value (in this case 0.2) by the frameTime attribute.
 Translation was made possible by handleKeys function which is activated by key presses (pg.key.get_pressed()). If the key matches one of w, a, s, or d keys, motion starts in that direction by multiplying a step value (in this case 0.0025) by the frameTime attribute.
 
-# 4: Gouraud shading
-For this point, I was not able/did not have the time capacity to finish it. There are some useful tutorials but phong shading was the more popular topic in the shading tutorials. 
-
+# 4: Phong shading
+For the shading, Phong shading was used instead of Gouraud shading.
 # 5: Skymap using cube mapping 
 
 This was done by instantiating the class CubeMapBasicMaterial. Its working principle is by using 5 images of a sky image and projecting each image to a face of the cube using the GL_TEXTURE_CUBE_MAP_{DIRECTION_DIMENSION}.
